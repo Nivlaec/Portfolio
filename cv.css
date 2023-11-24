@@ -198,6 +198,7 @@ footer {
     .skills-column {
       max-width: 100%;
       margin-bottom: 30px;
+      margin-left: 15px;
     }
     .head{
         text-align: center;
