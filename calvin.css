@@ -252,14 +252,6 @@ body{
     width: 100%;
 }
 .image{
-    /*position: absolute;
-    top: 0;
-    right: 500px;
-    width: 500;
-    height: 100%;
-    background: transparent;
-    border: 2px solid greenyellow;
-    transition: 3s;*/
     position: absolute;
     right: 50px;
     left: 800px;
@@ -268,7 +260,6 @@ body{
     background: url('cal.jpg') no-repeat;
     background-size:cover;
     background-position: right;
-    /*border: 2px solid #00abf0;*/
     border-radius: 50%;
     transition: 4s;
 }
@@ -304,9 +295,6 @@ body{
     cursor: pointer;
     display: none;
 }
-
-
-
 
 /*small screeen*/
 @media screen and (max-width:700px){
@@ -345,7 +333,7 @@ body{
     }
 
     .menu-toggle {
-        display: none; /* Hide the checkbox */
+        display: none;
     }
 
     .menu-icon {
@@ -355,17 +343,15 @@ body{
         cursor: pointer;
     }
 
-    /* Use the general sibling selector (~) instead of adjacent sibling selector (+) */
     #menu-toggle:checked ~ .navbar {
         display: flex;
     }
 
-
-    /*rest*/
     .home-content p{
         position: relative;
         font-size: 15px;
         margin: 20px 0 40px;
+        margin-bottom: 25px;
     }
     .home-content h3{
         position: relative;
@@ -380,8 +366,9 @@ body{
         line-height: 1.2;
     }
     .icons{
+        
         position: absolute;
-        bottom: 5px;
+        bottom: 2px;
         width: 190px;
         display: flex;
         justify-content: space-between;
@@ -393,10 +380,6 @@ body{
         height: 50px;
         display: flex;
         justify-content: space-between;
-    }
-    
-    
-    
-    
+    }  
 
 }

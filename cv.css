@@ -1,13 +1,20 @@
-/* Reset some default styles for better consistency */
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500,600,700,800,900&display=swap');
+
 body, h1, h2, p {
     margin: 0;
     padding: 0;
 }
+.head{
+    text-align: center;
+    font-size:1.8rem;
+    color: #fff;
+}
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color:#081b29;
     color: #00abf0;
+    margin-bottom: 25px;
 }
 
 header {
@@ -32,10 +39,20 @@ header {
     margin: 10px;
     width: 300px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px  #00abf0/*rgba(0, 0, 0, 0.1)*/;
     transition: transform 0.3s ease-in-out;
 }
+.institution h2{
+    text-align: center;
+    font-size:2.0rem;
+    color: #00abf0;
+}
+.institution p{
+    font-size: 1.5rem;
+}
 h3{
+    text-align: center;
+    font-size:1.5rem;
     color: #fff;
 }
 
@@ -58,12 +75,146 @@ h3{
     animation-delay: 1s;
 }
 
+
+.heading{
+    text-align: center;
+    font-size:2.5rem;
+    padding: 2rem;
+}
+.title{
+    text-align: center;
+}
+.skills{
+    margin-top: 20px;
+    margin: auto;
+    min-height:auto;
+    padding-bottom: 1.2rem;
+    background: var(--second-bg-color);
+    width: 88%;
+}
+
+.skills .skills-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.skills-column {
+    flex: 1;
+    max-width: 45%;
+    margin-left: 25px;
+    box-shadow: 0 4px 8px #00abf0;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.skills-column h3{
+    padding-top: 1rem;
+}
+.skills-column:hover {
+    transform: scale(1.05);
+}
+.skills-row .skills-column{
+    flex: 1 1 30rem;
+}
+
+.skills-column .title{
+   font-size: 2.0rem;
+   margin: 0 0 1.5rem;
+}
+
+
+.skills-box .skills-content{
+    position: relative;
+    border: .2rem solid #00abf0;
+    border-radius: .6rem;
+    padding: .2rem 1.5rem;
+}
+.skills-content .progress{
+    padding: 0.5rem 0;
+}
+.skills-content .progress h2{
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.skills-content .progress .bar{
+    height: 1.3rem;
+    border-radius: .6rem;
+    border: .2rem solid #00abf0;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+.skills-content .progress .bar span{
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background:#00abf0;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
+    width: 85%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
+    width: 90%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
+    width: 80%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span{
+    width: 90%;
+}
+/*Professional*/
+.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
+    width: 95%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span{
+    width: 85%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span{
+    width: 90%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span{
+    width: 85%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span{
+    width: 80%;
+}
 footer {
     background-color: #081b29;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 13px;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .institution p{
+        font-size: 1.5rem;
+    }
+    .skills-column {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+    .head{
+        text-align: center;
+        font-size:1.0rem;
+        color: #fff;
+    }
+    .heading{
+        text-align: center;
+        font-size:2.5rem;
+    }
+    .skills-content .progress h2{
+        color: #fff;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .skills-column h3{
+        font-size: 1.0rem;
+    }
 }

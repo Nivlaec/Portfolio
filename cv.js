@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var downloadButtons = document.querySelectorAll('.download-btn');
+    let downloadButtons = document.querySelectorAll('.download-btn');
 
     downloadButtons.forEach(function (btn) {
         btn.addEventListener('click', function () {
-            var institutionName = btn.closest('.institution').querySelector('h2').innerText;
-            var documentType = btn.closest('.institution').querySelector('p').innerText.split(":")[1].trim();
+            let institutionName = btn.closest('.institution').querySelector('h2').innerText;
+            let documentType = btn.closest('.institution').querySelector('p').innerText.split(":")[1].trim();
 
             downloadDocument(institutionName, documentType);
         });
