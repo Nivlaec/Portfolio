@@ -368,10 +368,11 @@ body{
     .icons{
         
         position: absolute;
-        bottom: 2px;
+        bottom: 25px;
         width: 190px;
         display: flex;
         justify-content: space-between;
+    
     }
     
     .home-content .btn-box{
@@ -380,6 +381,7 @@ body{
         height: 50px;
         display: flex;
         justify-content: space-between;
+        margin-left: 5px;
     }  
 
 }
